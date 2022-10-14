@@ -1,0 +1,14 @@
+-git init
+-git pull "https.git"
+-git add .
+-git commit -m ""
+-git remote add origin "https.git"
+-git push origin "branch name"
+-git branch
+
+-->Create another branch
+-git branch -b "branch name"
+
+-->To switch branch
+-git checkout "branch name"
+
