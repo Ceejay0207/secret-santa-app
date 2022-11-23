@@ -1,0 +1,32 @@
+.contact{
+    height: 85vh;
+    width: 100%;
+    background-color: #339966;
+}
+
+.forms-data input{
+    text-decoration: none;
+    border: none;
+
+}
+.forms-data input{
+    margin-top: 20px;
+    width: 100%;
+    font-size: 20px;
+}
+textarea{
+    font-size: 20px;
+}
+.button{
+    margin-top: 10px;
+    background-color: rgb(153, 248, 248);
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    height: 50px;
+    width: 80px;
+}
+.button:hover{
+    background-color: #5cfb87;
+    transition: 0.5s;
+}
