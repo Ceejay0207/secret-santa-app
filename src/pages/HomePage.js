@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import santabg from "./santabg.jpg";
 
 function HomePage() {
 
@@ -34,7 +35,11 @@ function HomePage() {
     </div>
   </div>
 </nav>
-        <button  type="submit" onClick={handleSubmit}>Get started</button>
+        
+
+        <div className="container-fluid bg-danger">
+         <button  type="submit" onClick={handleSubmit}>Get started</button>
+        </div>
         </div>
 
     )

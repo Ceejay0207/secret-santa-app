@@ -85,6 +85,17 @@ return(
       <form>
         <TableRows/>
       </form>
+
+      <button type="button" className=" btn btn-primary btn-sm w-25" > Submit</button> 
+          </div>
+    </>
+)
+
+
+}
+
+export default MainPage;
+
       {/* <form>
         <div className="row" >
           <div className="col-4 ">
@@ -148,16 +159,6 @@ return(
            </div>
           
        </div>
-          
-           
-          </form>
-          <button type="button" onClick={addNewRow} className=" btn btn-secondary m-3 btn-sm w-25" > Add</button>
-          <button type="button" className=" btn btn-primary btn-sm w-25" > Submit</button> */}
-          </div>
-    </>
-)
+          </form>*/}
 
-
-}
-
-export default MainPage;
+ 
