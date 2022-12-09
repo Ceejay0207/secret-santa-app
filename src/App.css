@@ -4,15 +4,16 @@
   height: 100vh;
 }
 .Content{
-  border: 1px solid red;
+  background-color:#58b69b;
+  border: 1px solid white;
   position: absolute;
   top:160px;
   left:100px;
   height: 310px;
+  border-radius: 15px;
 }
 p , h1 {
   width: 500px;
-  text:white;
 }
 
 .App {

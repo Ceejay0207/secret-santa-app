@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router";
-import image from "../components/img/image.jpg";
+import backgroundImage from "../images/homepage-background.jpg";
 
 function HomePage() {
 
@@ -15,7 +15,7 @@ function HomePage() {
   }
 
     return (
-        <div className="Image" style={{ backgroundImage:`url(${image})` }}>
+        <div className="Image" style={{ backgroundImage:`url(${backgroundImage})` }}>
             <nav className="navbar navbar-expand-lg " style={{backgroundColor:'white'}}>
        <div className="container-fluid ">
     <a className="navbar-brand" href="#">Navbar</a>
@@ -37,9 +37,9 @@ function HomePage() {
 </nav>
         
 
-  <div className="Content" style={{border:"1px solid red"}}>
-    <p className="">Home of the world's #1 Secret Santa Generator</p>
-    <h1>Destination: Secret Santa</h1> 
+  <div className="Content">
+    <p className="text-white">Home of the world's #1 Secret Santa Generator</p>
+    <h1 className="">Destination: Secret Santa</h1> 
     <p>Invite your friends and family to the best way to exchange gifts. It's free, fun, and easy. You even get your own Wishlist!</p>
       
 
