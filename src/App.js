@@ -3,12 +3,11 @@ import './App.css';
 import HomePage from './pages/HomePage';
 import MainPage from './pages/MainPage';
 import LoginPage from './pages/Login';
-import ParticipantList from './pages/ParticipantList';
+import Shop from './components/Shop';
 import Register from './pages/Register';
-
-import Welcome from './pages/participant/Welcome';
-import DrawName from './pages/participant/DrawName';
-import MyWishList from './pages/participant/MyWishList';
+import Exchanges from './components/Exchanges';
+import Wishlist from './components/Wishlist';
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
@@ -17,13 +16,12 @@ function App() {
         <Route path='/' element={<HomePage/>}/>
         <Route path="/Login" element={<LoginPage />}/>
         <Route path='/Admin' element={<MainPage/>}/>
-        <Route path="/Participantlist" element={<ParticipantList/>} />
+        <Route path="/shop" element={<Shop/>} />
         <Route path="/register" element={<Register/>} />
-
-        {/* Participant Routes */}
-        <Route path='/participant/' element={<Welcome/>}/>
-        <Route path='/participant/drawname' element={<DrawName/>}/>
-          <Route path='/participant/mywishlist' element={<MyWishList/>}/>
+        <Route path='/exchanges' element={<Exchanges/>} />
+        <Route path='/wishlist' element={<Wishlist/>}/>
+        <Route path='/dashboard' element={<Dashboard/>}/>
+       
      </Routes>
     </div>
   );

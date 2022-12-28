@@ -2,7 +2,7 @@ import { useState } from "react";
 import React from "react";
 function TableRows({ rows, tableRowRemove, onValUpdate }) {
   return rows.map((rowsData, index) => {
-    const { name, email, profile } = rowsData;
+    const { name, email, age } = rowsData;
     return (
       <>
       <tr key={index}>
@@ -26,19 +26,20 @@ function TableRows({ rows, tableRowRemove, onValUpdate }) {
         </td>
         <td>
           <input
-            type="text"
-            value={profile}
+            type="number"
+            value={age}
             onChange={(event) => onValUpdate(index, event)}
-            name="profile"
+            name="age"
             className="form-control"
           />
         </td>
         <td>
           <button
-            className="btn btn-dark"
+            type="button"
+            className="deleteBtn"
             onClick={() => tableRowRemove(index)}
           >
-            Delete Row
+            Delete
           </button>
         </td>
       </tr>
@@ -47,7 +48,7 @@ function TableRows({ rows, tableRowRemove, onValUpdate }) {
   });
 }
 
-    function Table({}) {
+    function Table() {
     const [rows, initRow] = useState([]);
     const addRowTable = () => {
       const data = {
@@ -76,10 +77,11 @@ function TableRows({ rows, tableRowRemove, onValUpdate }) {
                 
                 <th>Name</th>
                 <th>Email</th>
-                <th>Profile</th>
+                <th>Age</th>
+
             <th>
-                <button type="button" className="btn btn-danger" onClick={addRowTable}>
-                  Insert Row
+                <button type="button" className="addBtn text-white" onClick={addRowTable}>
+                 Add
                 </button>
               </th>
             </tr>

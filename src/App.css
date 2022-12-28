@@ -1,22 +1,189 @@
+
+/* Homepage */
 .Image{
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
+i{
+  font-size: 20px;
+ 
+ ;
+}
 .Content{
-  background-color:#58b69b;
-  border: 1px solid white;
   position: absolute;
   top:160px;
   left:100px;
-  height: 310px;
-  border-radius: 15px;
 }
-p , h1 {
+nav{
+  position: fixed;
+}
+p {
   width: 500px;
+  color: white;
+}
+h1{
+  font-family: 'Roboto Slab', serif;
+  color: white;
+}
+.btnStarted{
+  background-color: #58b69b;
+  width: 200px;
+  border:none;
+  height: 50px;
+}
+.loginBtn{
+  border: none;
+  position:absolute;
+  right: 125px;
+  margin-right: 50px;
+  font-weight: 500;
+  background-color: white
+}
+.registerBtn{
+  border: none;
+  background-color: #285b52;
+  border-radius: 10px;
+  font-weight: 500;
+  width: 100px;
+  height: 40px;
+  margin-right: 50px;
+  color: white;
+
 }
 
-.App {
+
+.title{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+  font-size: 30px;
+  margin-left: 100px;
+}
+
+/*Login Styles*/
+
+.formInput{
+  width: 500px;
+  margin-top: 50px;
+  
+}
+.btnInput{
+  width: 400px;
+    border-radius: 15px;
+    background-color:#285b52;
+    border: none;
+    height: 35px;
+    margin-left: 40px;
+    color: white;
+}
+.navBackground{
+  background-color: #58b69b;
+}
+/*Mainpage*/
+
+.background-mainpage{
+  background-repeat: round;
+  background-size: cover;
+  height: 100vh;
+}
+
+.mainpage-content{
+    position: absolute;
+    top: 110px;
+    max-width: 579px;
+}
+.submit-layout{
+text-align: center;
+
+}
+.submitBtn{
+  width: 100px;
+  background-color: #285b52;
+  border-radius: 15px;
+  border: none;
+  height: 40px;
+  color: white;
+}
+.addBtn {
+  width: 100px;
+  background-color: #285b52;
+  border-radius: 15px;
+  border: none;
+  height: 40px;
+}
+.deleteBtn{
+  width: 100px;
+  padding: 0;
+  height: 35px;
+  background-color: #621622;
+  border-radius: 15px;
+  color: white;
+  border: none;
+
+}
+
+/*Header*/
+.header-nav{
+  background-color:#58b69b   ;
+}
+
+/*Dashboard*/
+a{
+  margin-left: 10px;
+}
+.header-list{
+  font-size: 13px;
+  margin-top: 3px;
+}
+.content-section{
+  background-color: #bbe0d8;
+  border-bottom-right-radius: 9.3rem 10rem;
+  padding: 1.2rem 2rem 5rem;
+  position: relative;
+  z-index: 6;
+}
+.search-input{
+  border-top-left-radius: 23px;
+  border-bottom-left-radius: 23px;
+  border: none;
+  line-height: 2.5rem;
+  width: 300px;
   text-align: center;
 }
+.search-btn{
+  border: none;
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px;
+    width: 40px;
+    background-color: #fff;
+    line-height: 2.5;
+}
+.slide-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.slide-content{
+  align-items: center;
+  background: #fff;
+  border-radius: 2rem;
+  box-shadow: 0.2rem 0.4rem 1.2rem rgb(0 0 0 / 10%);
+  display: flex;
+  height: 9rem;
+  justify-content: center;
+  margin: 1rem;
+  padding: 3rem 1.7rem;
+  width: 20rem;
+}
 
+.img-content{
+  background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+.slide-content:hover{
+  box-shadow: 0px 1px 4px 4px  rgb(0 0 0  / 10%)
+ }

@@ -23,9 +23,15 @@ const Register = () => {
  }
 
 return(
+  <>
+  <nav className="navBackground navbar navbar-expand-lg d-flex justify-content-center " >
+       
+  <div className="title text-white ">Secret Santa</div>
+ 
+</nav>
 <div className="form__container d-flex flex-column align-items-center justify-content-center">
-        <form>
-          <h4 className="form__heading">Register</h4>
+        <form className="formInput">
+          <h4 className="form__heading text-center">Register</h4>
           <hr />
           <div className="mb-3">
             <label htmlFor="exampleInputEmail1" className="form-label">
@@ -52,16 +58,17 @@ return(
               id="exampleInputPassword1"
             />
           </div>
-          <div className="form__signupLink mb-3">
-            <p>
-              Already Have An Account? <Link to="/">LogIn!</Link>
-            </p>
+          <div className="form__signupLink mb-3 text-center">
+            
+              Already have an account? <Link to="/">Login</Link>
+            
           </div>
-          <button type="submit" className="form__button" onClick={handleSubmit}>
+          <button type="submit" className="btnInput form__button" onClick={handleSubmit}>
             Register
           </button>
         </form>
       </div>
+      </>
 )
 
 }
