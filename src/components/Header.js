@@ -5,10 +5,9 @@ const Header = () => {
     <div>
       <nav className="header-nav navbar navbar-expand-lg navbar-dark  ">
         <div className="container">
-
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-              <Link className="nav-link " to="/Admin">
+              <Link className="nav-link " to="/superadmin">
                 Admin
               </Link>
             </li>

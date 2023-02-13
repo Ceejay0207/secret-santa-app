@@ -34,7 +34,7 @@ const LoginPage = () => {
           <h4 className="form__heading text-center">Login Here </h4>
           <hr />
           <div className="mb-3">
-            <label htmlFor="exampleInputEmail1" className="form-label">
+            <label htmlFor="Email" className="form-label">
               Email address
             </label>
             <input
@@ -42,11 +42,11 @@ const LoginPage = () => {
               className="form-control"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              id="exampleInputEmail1"
+              id="Email"
               aria-describedby="emailHelp"/>
           </div>
           <div className="mb-3">
-            <label htmlFor="exampleInputPassword1" className="form-label">
+            <label htmlFor="password" className="form-label">
               Password
             </label>
             <input
@@ -54,7 +54,7 @@ const LoginPage = () => {
               className="form-control"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              id="exampleInputPassword1"/>
+              id="password"/>
           </div>
           <div className="form__signupLink mb-3 text-center">
               Don't have an account? <Link to="/register">Click here!</Link>

@@ -1,4 +1,6 @@
-
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
 /* Homepage */
 .Image{
   background-repeat: no-repeat;
@@ -56,7 +58,7 @@ h1{
 .title{
   font-family: 'Times New Roman', Times, serif;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 40px;
   margin-left: 100px;
 }
 
@@ -124,7 +126,14 @@ text-align: center;
 
 /*Header*/
 .header-nav{
-  background-color:#58b69b   ;
+  background-color:#58b69b;
+}
+.admin{
+  font-size: 15px;
+}
+.header-list>a{
+  padding: 0px 15px;
+  font-size: 13;
 }
 
 /*Dashboard*/
@@ -135,6 +144,7 @@ a{
   font-size: 13px;
   margin-top: 3px;
 }
+/*Shop*/
 .content-section{
   background-color: #bbe0d8;
   border-bottom-right-radius: 9.3rem 10rem;
@@ -187,3 +197,233 @@ a{
 .slide-content:hover{
   box-shadow: 0px 1px 4px 4px  rgb(0 0 0  / 10%)
  }
+
+ /*Wishlist*/
+ .wishlist-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+
+ }
+ .wishlist{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  background-color: #bbe0d8;
+  border-radius: 30px;
+  min-height: 350px;
+  cursor: pointer;
+ }
+ .wishlist>a{
+  text-decoration: none;
+  color: black;
+ }
+ .wishlist-box{
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+ }
+ .wishlist-button{
+  background-color: wheat;
+  max-width: max-content;
+  padding: 2px 13px;
+  border-radius: 25px;
+  
+ }
+
+
+
+
+
+ /*Exchanges*/
+ .exchange-container{
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  box-sizing: border-box;
+ }
+ .exchange{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+ }
+ .exchange-content{
+  background: #fff;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  display: flex;
+ }
+ .exchange-content>a{
+  text-decoration: none;
+ }
+ .current-exchange{
+  flex-grow: 1;
+  font-size: 1rem;
+  line-height: 1rem;
+  min-width: 25rem;
+  padding: 1.8rem;
+  position: relative;
+  text-align: center;
+ }
+ .current-exchange::before{
+  border-bottom: .5rem solid teal;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+ }
+ .previous-exchange{
+  flex-grow: 1;
+  font-size: 1rem;
+  line-height: 1rem;
+  min-width: 25rem;
+  padding: 1.8rem;
+  position: relative;
+  text-align: center;
+  border-left: 1px solid #d1d1d6;
+  margin: 0px;
+ }
+ .previous-exchange::before{
+  border-bottom: .5rem solid teal;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+ }
+ .current , .previous {
+font-size: 20px;
+color: black;
+ }
+ /*Create an exchange*/
+.gift{
+  width: 100%;
+  min-height: 544px;
+}
+.gift-exchange{
+ margin-top: 50px;
+}
+.gift-button{
+  width: 400px;
+  border-radius: 50px;
+  background-color: teal;
+  color: white;
+  padding: 10px;
+  border: none;
+  margin-bottom: 25px;
+}
+/*Socials*/
+.social-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.socials{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1024px;
+}
+.social-title{
+display: block;
+line-height: 5rem;
+font-size: 25px;
+}
+.socials-content{
+  justify-content: center;
+  padding: 30px 0 40px;
+  font-size: 25px;
+  text-decoration: none;
+}
+.socials-content>a{
+  text-decoration: none;
+  color: black;
+  font-weight:bolder;
+  padding: 10px 30px;
+}
+.socials-info{
+  display: flex;;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 50px;
+  box-shadow: 4px 8px 24px rgb(0 0 0 / 10%);
+  padding: 20px;
+  max-width: 1024px;
+  
+}
+.social-icon{
+  color: teal;
+}
+.info-icon{
+  border-color: transparent;
+  box-sizing: border-box;
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+/*footer*/
+.footer{
+  background-color: teal;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+/*modal*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

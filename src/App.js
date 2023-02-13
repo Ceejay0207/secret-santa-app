@@ -8,10 +8,12 @@ import Register from './pages/Register';
 import Exchanges from './components/Exchanges';
 import Wishlist from './components/Wishlist';
 import Dashboard from './components/Dashboard';
+import Participant from './pages/ParticipantPage';
+import SuperAdmin from './pages/SuperAdminPage';
+import Modal from './components/modal';
 
 function App() {
   return (
-    <div className="App">
      <Routes>
         <Route path='/' element={<HomePage/>}/>
         <Route path="/Login" element={<LoginPage />}/>
@@ -21,9 +23,11 @@ function App() {
         <Route path='/exchanges' element={<Exchanges/>} />
         <Route path='/wishlist' element={<Wishlist/>}/>
         <Route path='/dashboard' element={<Dashboard/>}/>
-       
+        <Route path='/superadmin' element={<SuperAdmin/>}/>
+        <Route path='/participant' element={<Participant/>}/>
+        <Route path='/modal' element={<Modal/>}/>
      </Routes>
-    </div>
+   
   );
 }
 

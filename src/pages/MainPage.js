@@ -28,11 +28,11 @@ return(
               className="form-control"
               value={groupName}
               onChange={(e) => setGroupName(e.target.value)}
-              id="exampleInputGroupName"/>
+              id="InputGroupName"/>
           </div>
       
           <div className="col-4">
-            <label htmlFor="exampleInputSpend" className="form-label">
+            <label htmlFor="InputSpend" className="form-label">
               How much will spend
             </label>
             <input
@@ -40,10 +40,10 @@ return(
               className="form-control"
               value={spend}
               onChange={(e) => setSpend(e.target.value)}
-              id="exampleInputSpend"/>
+              id="InputSpend"/>
             </div>
           <div className="col-4">
-            <label htmlFor="exampleInputDate" className="form-label">
+            <label htmlFor="InputDate" className="form-label">
              Date
             </label>
             <input
@@ -51,7 +51,7 @@ return(
               className="form-control"
               value={date}
               onChange={(e) => setDate(e.target.value)}
-              id="exampleInputDate"/>
+              id="InputDate"/>
            </div>
           </form>
           
