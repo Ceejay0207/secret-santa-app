@@ -15,10 +15,14 @@ const Shop = () => {
 <nav className="navbar navbar-expand-lg d-flex justify-content-between " style={{backgroundColor:'white'}}>
        <i className="fa-solid fa-gift"></i>
     <span className="title">Secret Santa</span>
-      <button className=" loginBtn " type="submit"  >Login</button>
-      <button className=" registerBtn" type="submit">Get Started</button>
+      <a href="/login">
+       <button className=" loginBtn " type="submit"  >Login</button>
+      </a>
+      <a href="/register">
+        <button className=" registerBtn" type="submit">Get Started</button>
+      </a>
     </nav>
-    <div className=" header-nav d-flex justify-content-center align-items-center mt-3  " style={{backgroundColor:'#eaf9f6'}}>
+    {/* <div className=" header-nav d-flex justify-content-center align-items-center mt-3  " style={{backgroundColor:'#eaf9f6'}}>
       <span className="admin">
       <a href=""style={{textDecoration:'none' , color:'#58b69b'}}>Welcome , Admin!</a>
       </span>
@@ -28,7 +32,7 @@ const Shop = () => {
       <Link to="/wishlist" style={{textDecoration:'none' , color:'#000'}}> Wishlist</Link>
       <Link to="/shop" style={{textDecoration:'none' , color:'#000'}}> Shop</Link>
     </div>
-    </div>
+    </div> */}
   <div className="content-section">
     
       <form className=" d-flex justify-content-center aling-items-center">

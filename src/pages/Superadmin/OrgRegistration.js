@@ -1,12 +1,12 @@
 import React from "react";
 import { useState } from "react";
-import TableRows from "../components/table";
-import Header from "../components/Header";
-import backgroundImage from "../images/participant-background3.jpg";
+import { Link } from "react-router-dom";
+import TableRows from "../../components/table";
+import backgroundImage from "../../images/participant-background3.jpg";
 
 
 
-const MainPage = () => {
+const OrgRegistration = () => {
     const [groupName, setGroupName] = useState("")
     const [spend, setSpend] = useState("");
     const [date, setDate] = useState("");
@@ -14,7 +14,32 @@ const MainPage = () => {
 return(
     <>
     <div className="background-mainpage" style={{ backgroundImage:`url(${backgroundImage})` }}>
-      <Header/>
+    <nav className="header-nav navbar navbar-expand-lg navbar-dark  ">
+        <div className="container">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <li className="nav-item">
+              <Link className="nav-link " to="/superadmin">
+                Organization
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link " to="/superadmin/participants">
+                Participant
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link " to="/superadmin/neworg">
+                Create Organization
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link " to="/Login">
+                Logout{" "}
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
     <div className="mainpage-content container-fluid py-3 " >
       <h4 className="form__heading">Create your Group </h4>
       <hr />
@@ -70,4 +95,4 @@ return(
     </>
 )
 }
-export default MainPage;
+export default OrgRegistration;

@@ -3,7 +3,7 @@ import Table from 'react-bootstrap/Table';
 import { Link } from "react-router-dom";
 
 
-const Participant =() => {
+const ListParticipants =() => {
 
 
 
@@ -12,21 +12,16 @@ const Participant =() => {
     <>
         
     <div>
-      <nav className="header-nav navbar navbar-expand-lg navbar-dark  ">
+    <nav className="header-nav navbar navbar-expand-lg navbar-dark  ">
         <div className="container">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-          <li className="nav-item">
-              <Link className="nav-link " to="/superadmin">
-                Organization
-              </Link>
-            </li>
             <li className="nav-item">
-              <Link className="nav-link " to="/participant">
+              <Link className="nav-link " to="/organization">
                 Participant
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link " to="/Login">
+              <Link className="nav-link " to="/Logout">
                 Logout{" "}
               </Link>
             </li>
@@ -44,7 +39,6 @@ const Participant =() => {
         <thead>
           <tr>
             <th>User Id</th>
-            <th>Organization Name</th>
             <th>Participant Name</th>
             <th>Age</th>
             <th>Birthdate</th>
@@ -54,7 +48,6 @@ const Participant =() => {
         <tbody>
           <tr>
             <td>1</td>
-            <td>GG</td>
             <td>Mark</td>
             <td>20</td>
             <td>asd</td>
@@ -62,7 +55,6 @@ const Participant =() => {
           </tr>
           <tr>
             <td>2</td>
-            <td>QQ</td>
             <td>Cj</td>
             <td>20</td>
             <td>qwe</td>
@@ -70,7 +62,6 @@ const Participant =() => {
           </tr>
           <tr>
             <td>3</td>
-            <td>EE</td>
             <td>Ej</td>
             <td>20</td>
             <td>qsde</td>
@@ -87,4 +78,4 @@ const Participant =() => {
 
 
 
-export default Participant;
+export default ListParticipants;
