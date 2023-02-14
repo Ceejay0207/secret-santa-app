@@ -1,5 +1,4 @@
 import React from "react";
-import Table from 'react-bootstrap/Table';
 import { Link } from "react-router-dom";
 
 const Receiver =() => {
@@ -28,13 +27,11 @@ const Receiver =() => {
         </div>
       </nav>
     </div>
-    <div className="table d-flex justify-content-center">
-       Receiver
+    <div className="draw">
+       <span className="draw-title">Draw Name</span>
+       <button>Start Draw Name</button>
     </div>
     </>
   );
 }
-
-
-
 export default Receiver;

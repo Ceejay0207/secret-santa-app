@@ -2,15 +2,9 @@ import React from "react";
 import Table from 'react-bootstrap/Table';
 import { Link } from "react-router-dom";
 
-
 const ListParticipants =() => {
-
-
-
   return (
-    
     <>
-        
     <div>
     <nav className="header-nav navbar navbar-expand-lg navbar-dark  ">
         <div className="container">

@@ -40,17 +40,6 @@ return(
   <div className="wishlist-button"><span>+</span></div>
   </div>
   <div className="wishlist-fade"></div>
-
-
-
-
-
-
-
-
-
-
-
   <div className="social-container">
     <div className="socials">
     <div className="social-title ">Secret Santa</div>
