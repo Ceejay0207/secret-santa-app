@@ -19,9 +19,15 @@ const LoginPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post('http://localhost:3001/auth/login',{
+      .post('http://localhost:3001/auth/login',
+      {
         email:'email@mail.com',
         password:'12123',
+      },
+      {
+        headers: {
+          'Content-Type': 'application/json',
+        }
       })
       .then((response) => {
         console.log(response)
@@ -29,7 +35,7 @@ const LoginPage = () => {
           throw new Error('Fallback error');
       })
       .catch((error) => {
-
+          console.log(error)
           throw new Error('Fallback error');
       });
       }
