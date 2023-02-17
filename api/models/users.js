@@ -1,6 +1,7 @@
-const {sequelize} = require('../api/db')
-const {DataTypes} = require('sequelize')
-const Users = sequelize.define('users',{
+'use strict';
+const {DataTypes , Sequelize} = require ('sequelize');
+const instance = require ('../db');
+const User = instance.sequelize.define('users',{
     fullname:{
         type:DataTypes.STRING,
     },
@@ -31,4 +32,4 @@ const Users = sequelize.define('users',{
     },
     })
 
-module.exports = Users
+module.exports = User

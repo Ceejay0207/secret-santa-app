@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 
 const LoginPage = () => {
@@ -17,13 +18,21 @@ const LoginPage = () => {
   //submit function
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (email === userName && password === userPassword) {
-      alert("Login Success");
-      navigate("/Admin");
-    } else {
-      alert("Invalid Email OR password");
-    }
-  };
+    axios
+      .post('http://localhost:3001/auth/login',{
+        email:'email@mail.com',
+        password:'12123',
+      })
+      .then((response) => {
+        console.log(response)
+
+          throw new Error('Fallback error');
+      })
+      .catch((error) => {
+
+          throw new Error('Fallback error');
+      });
+      }
   return (
     <>
      <nav className="navBackground navbar navbar-expand-lg d-flex justify-content-center " >

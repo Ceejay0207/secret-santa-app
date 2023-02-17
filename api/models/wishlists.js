@@ -1,4 +1,4 @@
-const {sequelize} = require('../api/db')
+const {sequelize} = require('../db')
 const {DataTypes} = require('sequelize')
 const Wishlists = sequelize.define('wishlists',{
     wishlists:{

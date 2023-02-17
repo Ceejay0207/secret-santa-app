@@ -1,4 +1,4 @@
-const User = require ('../models/user').model
+const User = require ('../models/users').model
 const bcrypt = require ('bcryptjs');
 const jwt = require ('jsonwebtoken');
 
@@ -24,10 +24,10 @@ exports.register = async (req , res , next) =>{
 
 exports.login = async (req , res , next) =>{
     try{
-
+    
         const user = await User.findOne({
            where:{
-            username:req.body.username
+            email:req.body.email
         } 
         });
         if(!user) return next( "User not found")

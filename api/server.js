@@ -1,17 +1,21 @@
 const express = require('express')
 const app = express()
 const {sequelize , connectToDb} = require ('./db')
+const cors = require ('cors')
+app.use(cors());
+const authRouter = require ('./routes/auth')
+app.use("/auth", authRouter)
 
-const organizationRouter = require("../routes/organization");
+const organizationRouter = require("./routes/organization");
 app.use("/organization", organizationRouter);
 
-const participantRouter = require("../routes/participant");
+const participantRouter = require("./routes/participant");
 app.use("/participants", participantRouter);
 
-const superadminRouter = require("../routes/superadmin");
+const superadminRouter = require("./routes/superadmin");
 app.use("/superadmin", superadminRouter);
 
-const PORT = 3000;
+const PORT = 3001;
 app.get('/',(req,res)=>{
     res.status(200).json({message:"Hello World"})
 })
