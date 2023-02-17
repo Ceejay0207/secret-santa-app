@@ -2,13 +2,13 @@ const express = require('express')
 const app = express()
 const {sequelize , connectToDb} = require ('./db')
 
-const organizationRouter = require("./routes/organization");
+const organizationRouter = require("../routes/organization");
 app.use("/organization", organizationRouter);
 
-const participantRouter = require("./routes/participant");
+const participantRouter = require("../routes/participant");
 app.use("/participants", participantRouter);
 
-const superadminRouter = require("./routes/superadmin");
+const superadminRouter = require("../routes/superadmin");
 app.use("/superadmin", superadminRouter);
 
 const PORT = 3000;

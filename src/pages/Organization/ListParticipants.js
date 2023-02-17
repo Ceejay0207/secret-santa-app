@@ -1,6 +1,7 @@
 import React from "react";
 import Table from 'react-bootstrap/Table';
 import { Link } from "react-router-dom";
+import OrganizationModal from '../../components/Organization/OrganizationModal.js'
 
 const ListParticipants =() => {
   return (
@@ -27,7 +28,7 @@ const ListParticipants =() => {
         <div className="d-flex justify-content-center align-items-center flex-column m-5" style={{'maxWidth':'max-content'}} >
         <span style={{'fontSize':'30px' , 'fontWeight':'bold'}}>List of Participants</span>
         <div className="participant-btn align-self-end " style={{'backgroundColor':'#58b69b'}}>
-        <button className="text-black" >Add Participant</button>
+        <button className="text-black" data-bs-toggle="modal" data-bs-target="#organizationmodal" >Add Participant</button>
         </div>
       <Table striped bordered hover style={{'width':'640px'}}>
         <thead>
@@ -65,7 +66,7 @@ const ListParticipants =() => {
       </Table>
       </div>
       </div>
-      
+      <OrganizationModal/>
       </>
   );
 }

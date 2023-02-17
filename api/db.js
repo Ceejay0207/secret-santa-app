@@ -1,6 +1,6 @@
 const {Sequelize} = require ('sequelize')
 const sequelize = new Sequelize (
-    'expresstasks',
+    'secretsantadb',
     'root',
     '',{
         dialect:'mysql',
