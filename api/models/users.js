@@ -19,17 +19,8 @@ const User = instance.sequelize.define('users',{
     },
     organizationId:{
         type:DataTypes.INTEGER,
-        references:{
-             model:{
-                tableName:'organizations',
-                schema:'schema'
-             },
-             key: 'id'
-            },
-            allowNull:false,
-            onUpdate:'cascade',
-            onDelete:'cascade'
-    },
+        allowNull:true
+    }
     })
 
-module.exports = User
+exports.model = User

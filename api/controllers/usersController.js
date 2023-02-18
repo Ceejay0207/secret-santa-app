@@ -30,8 +30,9 @@ exports.login = async (req , res , next) =>{
             email:req.body.email
         } 
         });
-        if(!user) return next( "User not found")
         
+        if(!user) return next( "User not found")
+        console.log(req.body.email)
 
         const isPasswordCorrect = await bcrypt.compare(
             req.body.password,
@@ -41,12 +42,11 @@ exports.login = async (req , res , next) =>{
          return next( "Wrong password or username!");
       
         const token = jwt.sign({
-            id:user.id,
-            isAdmin:user.isAdmin
+            id:user.id
         },
         "Y2VlamF5cXVpYW1jbw");
  
-        const { password , isAdmin , ...otherDetails} = user._previousDataValues;
+        const { password , ...otherDetails} = user._previousDataValues;
         res.cookie("access-token", token , {
             httpOnly:true,
         })

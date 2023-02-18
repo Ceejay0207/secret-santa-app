@@ -20,3 +20,4 @@ const connectToDb = async () =>{
 }
 
 module.exports = {sequelize , connectToDb}
+

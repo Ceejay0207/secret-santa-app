@@ -15,6 +15,9 @@ module.exports = {
       age:{
         type:Sequelize.INTEGER
       },
+      email:{
+        type:Sequelize.STRING
+      },
       gender:{
         type:Sequelize.STRING
       },
@@ -26,16 +29,7 @@ module.exports = {
       },
       organizationId:{
         type:Sequelize.STRING,
-        references:{
-          model:{
-            tableName:'organizations',
-            schema:'schema'
-          },
-          key:'id'
-        },
-        allowNull:false,
-        onUpdate:'cascade',
-        onDelete:'cascade'
+        allowNull:true
       },
       createdAt: {
         allowNull: false,

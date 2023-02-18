@@ -6,14 +6,14 @@ import axios from "axios";
 const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   //getting email password
-  const userName = localStorage.getItem("email")
-    ? localStorage.getItem("email")
-    : "admin@admin.com";
-  const userPassword = localStorage.getItem("password")
-    ? localStorage.getItem("password")
-    : "admin";
+  // const userName = localStorage.getItem("email")
+  //   ? localStorage.getItem("email")
+  //   : "admin@admin.com";
+  // const userPassword = localStorage.getItem("password")
+  //   ? localStorage.getItem("password")
+  //   : "admin";
 
   //submit function
   const handleSubmit = (e) => {
@@ -21,8 +21,8 @@ const LoginPage = () => {
     axios
       .post('http://localhost:3001/auth/login',
       {
-        email:'email@mail.com',
-        password:'12123',
+        email:email,
+        password:password,
       },
       {
         headers: {
@@ -31,7 +31,15 @@ const LoginPage = () => {
       })
       .then((response) => {
         console.log(response)
-
+        // if(response.data.role === 'participant') {
+        //   location.replace('/participants')
+        // }
+        // else if (response.data.isAdmin ==='organization'){
+        //   location.replace('/organizations')
+        // }
+      
+        // else('User not found');
+       
           throw new Error('Fallback error');
       })
       .catch((error) => {
